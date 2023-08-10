@@ -2,7 +2,9 @@
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.Migrations;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -20,13 +22,22 @@ namespace DataAccessLayer.Concrete.Repositories
         }
         public void Delete(T entity)
         {
-            _object.Remove(entity);
+            var deletedEntity = c.Entry(entity);
+            deletedEntity.State = EntityState.Deleted;
+            //_object.Remove(entity);
             c.SaveChanges();
+        }
+
+        public T get(Expression<Func<T, bool>> filter)
+        {
+            return _object.SingleOrDefault(filter);
         }
 
         public void Insert(T entity)
         {
-            _object.Add(entity);
+            var addedEntity = c.Entry(entity);
+            addedEntity.State = EntityState.Added;
+            //_object.Add(entity);
             c.SaveChanges();
         }
 
@@ -42,7 +53,9 @@ namespace DataAccessLayer.Concrete.Repositories
 
         public void Update(T entity)
         {
-            throw new NotImplementedException();
+            var updatedEntity = c.Entry(entity);
+            updatedEntity.State = EntityState.Modified; 
+            c.SaveChanges();
         }
     }
 }

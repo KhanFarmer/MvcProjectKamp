@@ -90,3 +90,9 @@ C:\Users\Hakan\source\repos\MvcProjectKamp\MvcProjectKamp\bin\BusinessLayer.pdb
 C:\Users\Hakan\source\repos\MvcProjectKamp\MvcProjectKamp\bin\BusinessLayer.dll.config
 C:\Users\Hakan\source\repos\MvcProjectKamp\MvcProjectKamp\bin\EntityFramework.SqlServer.dll
 C:\Users\Hakan\source\repos\MvcProjectKamp\MvcProjectKamp\bin\EntityFramework.SqlServer.xml
+C:\Users\Hakan\source\repos\MvcProjectKamp\MvcProjectKamp\bin\FluentValidation.dll
+C:\Users\Hakan\source\repos\MvcProjectKamp\MvcProjectKamp\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Hakan\source\repos\MvcProjectKamp\MvcProjectKamp\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\Hakan\source\repos\MvcProjectKamp\MvcProjectKamp\bin\FluentValidation.xml
+C:\Users\Hakan\source\repos\MvcProjectKamp\MvcProjectKamp\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Hakan\source\repos\MvcProjectKamp\MvcProjectKamp\bin\System.Threading.Tasks.Extensions.xml

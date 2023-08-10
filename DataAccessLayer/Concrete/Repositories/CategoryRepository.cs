@@ -3,6 +3,7 @@ using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.Migrations;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
@@ -19,6 +20,11 @@ namespace DataAccessLayer.Concrete.Repositories
         {
             _object.Remove(category);
             c.SaveChanges();
+        }
+
+        public Category get(Expression<Func<Category, bool>> filter)
+        {
+            throw new NotImplementedException();
         }
 
         public void Insert(Category category)
@@ -39,7 +45,9 @@ namespace DataAccessLayer.Concrete.Repositories
 
         public void Update(Category category)
         {
-            throw new NotImplementedException();
+            //_object.FirstOrDefault(c => c.CategoryID == category.CategoryID);
+            //_object.AddOrUpdate(category);
+            c.SaveChanges();
         }
     }
 }
