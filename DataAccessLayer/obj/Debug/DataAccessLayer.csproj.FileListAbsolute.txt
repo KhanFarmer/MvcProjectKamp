@@ -13,5 +13,8 @@ C:\Users\Hakan\source\repos\MvcProjectKamp\DataAccessLayer\obj\Debug\DataAccessL
 C:\Users\Hakan\source\repos\MvcProjectKamp\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CopyComplete
 C:\Users\Hakan\source\repos\MvcProjectKamp\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 C:\Users\Hakan\source\repos\MvcProjectKamp\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
-C:\Users\Hakan\source\repos\MvcProjectKamp\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig1.resources
+C:\Users\Hakan\source\repos\MvcProjectKamp\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_writer.resources
 C:\Users\Hakan\source\repos\MvcProjectKamp\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.GenerateResource.cache
+C:\Users\Hakan\source\repos\MvcProjectKamp\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_writerTitle_add.resources
+C:\Users\Hakan\source\repos\MvcProjectKamp\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_WriterImage.resources
+C:\Users\Hakan\source\repos\MvcProjectKamp\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_WriterStatus.resources

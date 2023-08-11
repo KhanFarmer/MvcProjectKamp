@@ -10,3 +10,5 @@ C:\Users\Hakan\source\repos\MvcProjectKamp\EntityLayer\obj\Debug\EntityLayer.csp
 C:\Users\Hakan\source\repos\MvcProjectKamp\EntityLayer\obj\Debug\EntityLayer.csproj.CopyComplete
 C:\Users\Hakan\source\repos\MvcProjectKamp\EntityLayer\obj\Debug\EntityLayer.dll
 C:\Users\Hakan\source\repos\MvcProjectKamp\EntityLayer\obj\Debug\EntityLayer.pdb
+C:\Users\Hakan\source\repos\MvcProjectKamp\EntityLayer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Hakan\source\repos\MvcProjectKamp\EntityLayer\bin\Debug\Newtonsoft.Json.xml

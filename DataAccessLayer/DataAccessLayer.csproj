@@ -67,9 +67,21 @@
     <Compile Include="EntitiyFramework\EfContentDal.cs" />
     <Compile Include="EntitiyFramework\EfHeadingDal.cs" />
     <Compile Include="EntitiyFramework\EfWriterDal.cs" />
-    <Compile Include="Migrations\202308080904322_mig1.cs" />
-    <Compile Include="Migrations\202308080904322_mig1.designer.cs">
-      <DependentUpon>202308080904322_mig1.cs</DependentUpon>
+    <Compile Include="Migrations\202308110752417_mig_writer.cs" />
+    <Compile Include="Migrations\202308110752417_mig_writer.designer.cs">
+      <DependentUpon>202308110752417_mig_writer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202308110845557_mig_writerTitle_add.cs" />
+    <Compile Include="Migrations\202308110845557_mig_writerTitle_add.designer.cs">
+      <DependentUpon>202308110845557_mig_writerTitle_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202308111325043_mig_WriterImage.cs" />
+    <Compile Include="Migrations\202308111325043_mig_WriterImage.designer.cs">
+      <DependentUpon>202308111325043_mig_WriterImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202308111333218_mig_WriterStatus.cs" />
+    <Compile Include="Migrations\202308111333218_mig_WriterStatus.designer.cs">
+      <DependentUpon>202308111333218_mig_WriterStatus.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -85,8 +97,17 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202308080904322_mig1.resx">
-      <DependentUpon>202308080904322_mig1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202308110752417_mig_writer.resx">
+      <DependentUpon>202308110752417_mig_writer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202308110845557_mig_writerTitle_add.resx">
+      <DependentUpon>202308110845557_mig_writerTitle_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202308111325043_mig_WriterImage.resx">
+      <DependentUpon>202308111325043_mig_WriterImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202308111333218_mig_WriterStatus.resx">
+      <DependentUpon>202308111333218_mig_WriterStatus.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
