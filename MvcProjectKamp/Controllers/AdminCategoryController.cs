@@ -54,9 +54,10 @@ namespace MvcProjectKamp.Controllers
         [HttpGet]
         public ActionResult EditCategory(int id)
         {
-            var categorValue = categoryManager.GetByID(id);
-            return View(categorValue);
-        }[HttpPost]
+            var categoryValue = categoryManager.GetByID(id);
+            return View(categoryValue);
+        }
+        [HttpPost]
         public ActionResult EditCategory(Category category)
         {
             categoryManager.UpdateCategory(category);

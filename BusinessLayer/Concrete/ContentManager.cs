@@ -1,5 +1,6 @@
 ﻿using BusinessLayer.Abstract;
 using DataAccessLayer.Abstract;
+using DataAccessLayer.EntitiyFramework;
 using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
@@ -11,9 +12,10 @@ namespace BusinessLayer.Concrete
 {
     public class ContentManager : IContentService
     {
-        IContactDal _contentDal;
+        IContent _contentDal;
+        
 
-        public ContentManager(IContactDal contentDal)
+        public ContentManager(IContent contentDal)
         {
             _contentDal = contentDal;
         }
@@ -45,8 +47,7 @@ namespace BusinessLayer.Concrete
 
         public List<Content> GetListByID(int id)
         {
-            throw new NotImplementedException();
-            //return _contentDal.List(x => x.HeadingID == id);
+            return _contentDal.List(x => x.HeadingID == id);
         }
 
         public void UpdateContent(Content category)

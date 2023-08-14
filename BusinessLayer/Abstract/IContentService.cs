@@ -14,7 +14,7 @@ namespace BusinessLayer.Abstract
         void AddContent(Content content);
         Content GetByID(int id);
         void DeleteContent(int id);
-        void DeleteContent(Content category);
+        void DeleteContent(Content category);   
         void UpdateContent(Content category);
     }
 }

@@ -18,3 +18,5 @@ C:\Users\Hakan\source\repos\MvcProjectKamp\DataAccessLayer\obj\Debug\DataAccessL
 C:\Users\Hakan\source\repos\MvcProjectKamp\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_writerTitle_add.resources
 C:\Users\Hakan\source\repos\MvcProjectKamp\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_WriterImage.resources
 C:\Users\Hakan\source\repos\MvcProjectKamp\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_WriterStatus.resources
+C:\Users\Hakan\source\repos\MvcProjectKamp\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_ContentStatus.resources
+C:\Users\Hakan\source\repos\MvcProjectKamp\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_HeadingStatus.resources
