@@ -14,11 +14,13 @@ namespace MvcProjectKamp.Controllers
     public class WriterController : Controller
     {
         WriterManager writerManager = new WriterManager(new EfWriterDal());
+        WriterValidator validationRules = new WriterValidator();
         // GET: Writer
         public ActionResult Index()
         {
             var WriterValues = writerManager.GetList();
             return View(WriterValues);
+            
         }
         [HttpGet] 
         public ActionResult AddWriter() 
@@ -28,7 +30,7 @@ namespace MvcProjectKamp.Controllers
         [HttpPost]
         public ActionResult AddWriter(Writer writer)
         {
-            WriterValidator validationRules = new WriterValidator();
+            
             ValidationResult  results = validationRules.Validate(writer);
             if (results.IsValid)
             {
