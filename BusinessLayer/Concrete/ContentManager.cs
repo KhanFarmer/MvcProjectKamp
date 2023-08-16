@@ -13,7 +13,7 @@ namespace BusinessLayer.Concrete
     public class ContentManager : IContentService
     {
         IContent _contentDal;
-        
+
 
         public ContentManager(IContent contentDal)
         {
@@ -37,12 +37,12 @@ namespace BusinessLayer.Concrete
 
         public Content GetByID(int id)
         {
-            throw new NotImplementedException();
+            return _contentDal.get(x => x.ContentID == id);
         }
 
         public List<Content> GetList()
         {
-            throw new NotImplementedException();
+            return _contentDal.List();
         }
 
         public List<Content> GetListByID(int id)

@@ -10,6 +10,9 @@
     @using (Html.BeginForm("EditWriter", "Writer", FormMethod.Post))
     {
         <div class="form-group">
+            @Html.HiddenFor(x => x.WriterID)
+            @Html.HiddenFor(x=>x.WriterImage)
+
             @Html.Label("Writer Name")
             @Html.TextBoxFor(x => x.WriterName, new { @class = "form-control" })
             @Html.ValidationMessageFor(x => x.WriterName)

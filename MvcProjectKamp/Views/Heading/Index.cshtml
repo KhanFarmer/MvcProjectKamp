@@ -4,7 +4,7 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
-
+    
 
 <!DOCTYPE html>
 <html>
@@ -91,7 +91,7 @@
                                     </a>
                                     <br />
                                     <small>
-                                        @item.HeadingDate
+                                        @item.HeadingDate.ToString("dd-MMM-yyyy")
                                     </small>
                                 </td>
                                 <td>
@@ -102,7 +102,7 @@
                                     </ul>
                                 </td>
                                 <td>
-                                    @item.HeadindStatus
+                                    @item.HeadingStatus
                                 </td>
                                 <td class="project-state">
                                     <span class="badge badge-success">@item.Category.CategoryName</span>

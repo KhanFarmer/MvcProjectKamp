@@ -7,13 +7,13 @@ namespace DataAccessLayer.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class mig_HeadingStatus1 : IMigrationMetadata
+    public sealed partial class mig_AddImage : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(mig_HeadingStatus1));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(mig_AddImage));
         
         string IMigrationMetadata.Id
         {
-            get { return "202308151236100_mig_HeadingStatus1"; }
+            get { return "202308160717472_mig_AddImage"; }
         }
         
         string IMigrationMetadata.Source

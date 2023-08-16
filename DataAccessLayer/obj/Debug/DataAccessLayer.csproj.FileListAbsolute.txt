@@ -19,7 +19,8 @@ C:\Users\Hakan\source\repos\MvcProjectKamp\DataAccessLayer\obj\Debug\DataAccessL
 C:\Users\Hakan\source\repos\MvcProjectKamp\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_WriterImage.resources
 C:\Users\Hakan\source\repos\MvcProjectKamp\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_WriterStatus.resources
 C:\Users\Hakan\source\repos\MvcProjectKamp\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_ContentStatus.resources
-C:\Users\Hakan\source\repos\MvcProjectKamp\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_HeadingStatus.resources
 C:\Users\Hakan\source\repos\MvcProjectKamp\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_addMessage.resources
 C:\Users\Hakan\source\repos\MvcProjectKamp\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_ConcactDate.resources
-C:\Users\Hakan\source\repos\MvcProjectKamp\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_HeadingStatus1.resources
+C:\Users\Hakan\source\repos\MvcProjectKamp\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.HeadingStatus.resources
+C:\Users\Hakan\source\repos\MvcProjectKamp\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.HeadingStatus1.resources
+C:\Users\Hakan\source\repos\MvcProjectKamp\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_AddImage.resources

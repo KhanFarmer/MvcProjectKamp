@@ -3,16 +3,16 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class mig_HeadingStatus : DbMigration
+    public partial class HeadingStatus : DbMigration
     {
         public override void Up()
         {
-            AddColumn("dbo.Headings", "HeadindStatus", c => c.Boolean(nullable: false));
+            DropColumn("dbo.Headings", "HeadindStatus");
         }
         
         public override void Down()
         {
-            DropColumn("dbo.Headings", "HeadindStatus");
+            AddColumn("dbo.Headings", "HeadindStatus", c => c.Boolean(nullable: false));
         }
     }
 }

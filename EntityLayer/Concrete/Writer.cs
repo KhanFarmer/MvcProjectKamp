@@ -4,11 +4,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections.ObjectModel;
 
 namespace EntityLayer.Concrete
 {
     public class Writer
     {
+        public Writer()
+        {
+            Heading = new Collection<Heading>();
+            contents = new Collection<Content>();
+        }
+
         [Key]
         public int WriterID { get; set; }
         [StringLength(50)]

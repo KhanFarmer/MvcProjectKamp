@@ -45,7 +45,7 @@ namespace DataAccessLayer.Concrete.Repositories
 
         public void Update(Category category)
         {
-            //_object.FirstOrDefault(c => c.CategoryID == category.CategoryID);
+            //_object.FirstOrDefault(context => context.CategoryID == category.CategoryID);
             //_object.AddOrUpdate(category);
             c.SaveChanges();
         }

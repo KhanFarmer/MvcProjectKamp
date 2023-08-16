@@ -65,13 +65,17 @@ namespace MvcProjectKamp.Controllers
         [HttpPost]
         public ActionResult EditHeading(Heading heading)
         {
-            headingManager.UpdateHeading(heading);
+            var dbRecord = headingManager.GetById(heading.HeadigID);
+            dbRecord.HeadingName = heading.HeadingName;
+            dbRecord.CategoryID = heading.CategoryID;
+
+            headingManager.UpdateHeading(dbRecord);
             return RedirectToAction("Index");
         }
         public ActionResult DeleteHeading(int id)
         {
             var HeadingValue = headingManager.GetById(id);
-            HeadingValue.HeadindStatus = false;
+            HeadingValue.HeadingStatus = false;
             headingManager.DeleteHeading(HeadingValue);
             return RedirectToAction("Index");
         }
