@@ -9,16 +9,17 @@
 @using (Html.BeginForm("AddWriter", "Writer", FormMethod.Post))
 {
     <div class="form-group">
+       
         @Html.Label("Writer Name")
         @Html.TextBoxFor(x => x.WriterName, new { @class = "form-control" })
         @Html.ValidationMessageFor(x => x.WriterName)
         <br />
 
-        @Html.Label("Writer Surname") 
+        @Html.Label("Writer Surname")
         @Html.TextBoxFor(x => x.WriterSurname, new { @class = "form-control" })
         @Html.ValidationMessageFor(x => x.WriterSurname)
         <br />
-        @Html.Label("Writer Title") 
+        @Html.Label("Writer Title")
         @Html.TextBoxFor(x => x.WriterTitle, new { @class = "form-control" })
         @Html.ValidationMessageFor(x => x.WriterTitle)
         <br />

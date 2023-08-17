@@ -42,6 +42,7 @@ namespace MvcProjectKamp.Controllers
             ValidationResult results = validationRules.Validate(writer);
             if (results.IsValid)
             {
+                writer.WriterImage = "https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/1795151/writer-clipart-md.png";
                 writerManager.AddWriter(writer);
                 return RedirectToAction("Index");
             }

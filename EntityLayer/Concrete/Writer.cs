@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Collections.ObjectModel;
+using static System.Net.WebRequestMethods;
 
 namespace EntityLayer.Concrete
 {
@@ -23,7 +24,9 @@ namespace EntityLayer.Concrete
         [StringLength(50)]
         public string WriterSurname { get; set; }
         [StringLength(500)]
-        public string WriterImage { get; set; }
+        //https://sosyalmedya.co/wp-content/uploads/2011/06/Facebook-Profil-Resimleri-940x470.jpg
+        //"~/AdminLTE-3.0.4/Images/person.jpeg"
+        public string WriterImage { get; set; } 
         [StringLength(50)]
         public string WriterMail { get; set; }
         [StringLength(500)]
