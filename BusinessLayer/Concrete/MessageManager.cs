@@ -1,5 +1,6 @@
 ﻿using BusinessLayer.Abstract;
 using DataAccessLayer.Abstract;
+using DataAccessLayer.EntitiyFramework;
 using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
@@ -40,7 +41,7 @@ namespace BusinessLayer.Concrete
 
         public List<Message> GetList()
         {
-            throw new NotImplementedException();
+            return _messageDal.List();
         }
 
         public List<Message> GetListInbox()

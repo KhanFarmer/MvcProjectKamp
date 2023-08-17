@@ -11,9 +11,11 @@ namespace MvcProjectKamp.Controllers
 {
     public class ContactController : Controller
     {
+
         // GET: Contack
         ContactManager contactManager = new ContactManager(new EfContactDal());
         ContactValidator contactValidator = new ContactValidator();
+        MessageManager messageManager = new MessageManager(new EfMessageDal());
         public ActionResult Index()
         {
             var contactValues = contactManager.GetList();
@@ -26,6 +28,7 @@ namespace MvcProjectKamp.Controllers
         }
         public PartialViewResult MessageListMenu()
         {
+            ViewData["Message"] = messageManager.GetList();
             return PartialView();
         }
     }

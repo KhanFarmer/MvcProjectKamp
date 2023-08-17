@@ -4,12 +4,11 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 <br />
-<h2>Edit Category Page</h2>
+<h3>Edit Category Page</h3>
 @using (Html.BeginForm("EditCategory", "AdminCategory", FormMethod.Post))
 {
     <div class="form-group">
-        @Html.Label("Category ID")
-        @Html.TextBoxFor(x => x.CategoryID, new { @class = "form-control" })
+        @Html.HiddenFor(x => x.CategoryID)
         <br />
         @Html.Label("Category ")
         @Html.TextBoxFor(x => x.CategoryName, new { @class = "form-control" })
@@ -18,8 +17,9 @@
         @Html.TextAreaFor(x => x.Description, new { @class = "form-control" })
         <br />
         <div class="form-check">
-            @Html.CheckBoxFor(x => x.CategoryStatus, new { @class = "form-check-input" })
+            @Html.CheckBoxFor(x => x.CategoryStatus, new { @class = "custom-checkbox-style" })
             @Html.Label("Is Active ?")
+            
         </div>
 
         <br />

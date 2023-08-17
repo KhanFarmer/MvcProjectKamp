@@ -61,8 +61,9 @@
 
                                     <p class="text-muted">
                                         @Model.WriterAbout
+
                                     </p>
-                                    <sub> @contents.FirstOrDefault().ContentDate.ToString("dd.MM.yyyy HH:mm")</sub>
+                                    <sub></sub>
                                 </div> 
                                 <!-- /.card-body -->
                             </div>
@@ -76,6 +77,10 @@
                                     <div class="tab-content">
                                         <div class="active tab-pane" id="activity">
                                             <!-- Post -->
+                                            @foreach (var item in contents)
+                                            {
+                                                if(item.WriterID == Model.WriterID)
+                                                {
                                             <div class="post">
                                                 <div class="user-block">
                                                     <img class="img-circle img-bordered-sm" src="@Model.WriterImage" alt="user image">
@@ -83,15 +88,19 @@
                                                         @Model.WriterName @Model.WriterSurname
 
                                                     </span>
-                                                    <span class="description"> test </span>
+                                                   
+                                                    <span class="description">  @item.ContentDate.ToString("dd.MM.yyyy HH:mm")</span>
                                                 </div>
                                                 <!-- /.user-block -->
                                                 <p>
-                                                    add new message
+                                                    @item.ContentValue
+                                                    
+                                                    
                                                 </p>
 
                                             </div>
-
+                                                    }
+                                                }
                                         </div>
                                         <!-- /.tab-pane -->
                                         <!-- /.tab-pane -->
@@ -113,3 +122,13 @@
     </div>
 
 </body>
+
+
+<!--e
+    Veritabanına tüm şifreler kriptolanıp kaydedilecek (Encrypt)
+    Ancak işleme alınırken orjinal versiyonları alınacak (Decrypt)
+    Örn : 
+        Şifre : 123 -> Veritabanında wefhqwehfuo43hfu1u4hof -> İşlemde 123
+
+    Password Encryption Generator (Hash olmayacak,aes,hsa,bcrypt vs olabilir hash olamaz)
+    -->

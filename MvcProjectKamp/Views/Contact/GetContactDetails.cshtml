@@ -42,10 +42,15 @@
                                 <h5>Subject : @Html.DisplayFor(x => x.Subject)</h5>
                                 <h6>
                                     Mail: @Html.DisplayFor(x => x.UserMail)
-                                    <span class="mailbox-read-time float-right">15 Feb. 2015 11:03 PM</span>
+                                    <span class="mailbox-read-time float-right">@Html.DisplayFor(x => x.ContactDate)</span>
                                 </h6>
                             </div>
                             <!-- /.mailbox-read-info -->
+                            <!-- /.mailbox-controls -->
+                            <div class="mailbox-read-message">
+                                <p>@Html.DisplayFor(x => x.Message)</p>
+
+                            </div>
                             <div class="mailbox-controls with-border text-center">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-default btn-sm" data-toggle="tooltip" data-container="body" title="Delete">
@@ -62,11 +67,6 @@
                                 <button type="button" class="btn btn-default btn-sm" data-toggle="tooltip" title="Print">
                                     <i class="fas fa-print"></i>
                                 </button>
-                            </div>
-                            <!-- /.mailbox-controls -->
-                            <div class="mailbox-read-message">
-                                <p>@Html.DisplayFor(x => x.Message)</p>
-
                             </div>
                             <!-- /.mailbox-read-message -->
                         </div>
