@@ -15,6 +15,7 @@ namespace MvcProjectKamp.Controllers
     {
         // GET: AdminCategory
         CategoryManager categoryManager = new CategoryManager(new EfCategoryDal());
+        [Authorize(Roles = "b")]
         public ActionResult Index()
         {
             var categoryValues = categoryManager.GetList();
@@ -25,7 +26,7 @@ namespace MvcProjectKamp.Controllers
         {
             return View();
         }
-        
+
         [HttpPost]
         public ActionResult AddCategory(Category category)
         {

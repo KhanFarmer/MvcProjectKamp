@@ -25,3 +25,4 @@ C:\Users\Hakan\source\repos\MvcProjectKamp\DataAccessLayer\obj\Debug\DataAccessL
 C:\Users\Hakan\source\repos\MvcProjectKamp\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.HeadingStatus1.resources
 C:\Users\Hakan\source\repos\MvcProjectKamp\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_AddImage.resources
 C:\Users\Hakan\source\repos\MvcProjectKamp\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_WriterImageDefult.resources
+C:\Users\Hakan\source\repos\MvcProjectKamp\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_admins.resources

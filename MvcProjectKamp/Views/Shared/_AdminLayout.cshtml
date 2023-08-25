@@ -60,14 +60,17 @@ to get the desired effect
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
                              with font-awesome or any other icon font library -->
-                        <li class="nav-item has-treeview ">
-                            <a href="/AdminCategory/Index/" class="nav-link ">
-                                <i class="nav-icon fas fa-tachometer-alt"></i>
-                                <p>
-                                    Categories
-                                </p>
-                            </a>
-                        </li>
+                        @if (User.IsInRole("b"))
+                        {
+                            <li class="nav-item has-treeview ">
+                                <a href="/AdminCategory/Index/" class="nav-link ">
+                                    <i class="nav-icon fas fa-tachometer-alt"></i>
+                                    <p>
+                                        Categories
+                                    </p>
+                                </a>
+                            </li>
+                        }
                         <li class="nav-item">
                             <a href="/Heading/Index/" class="nav-link">
                                 <i class="nav-icon fas fa-th"></i>
@@ -84,7 +87,7 @@ to get the desired effect
                                 </p>
                             </a>
                         </li>
-                        
+
                         <li class="nav-item has-treeview">
                             <a href="/About/Index/" class="nav-link">
                                 <i class="nav-icon fas fa-tree"></i>
@@ -162,7 +165,7 @@ to get the desired effect
             <!-- /.sidebar -->
         </aside>
 
-        <!-- Content Wrapper. Contains page content -->
+        <!-- Content Wrapper.Contains page content -->
         <div class="content-wrapper">
 
             <!-- Main content -->
@@ -178,7 +181,7 @@ to get the desired effect
     <!-- REQUIRED SCRIPTS -->
     <!-- jQuery -->
     @*@<script src="~/AdminLTE-3.0.4/plugins/jquery/jquery.min.js"></script>*@
-    
+
     <!-- Bootstrap -->
     <script src="~/AdminLTE-3.0.4/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- AdminLTE -->

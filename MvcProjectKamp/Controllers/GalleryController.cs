@@ -10,6 +10,7 @@ using System.Web.Mvc;
 
 namespace MvcProjectKamp.Controllers
 {
+    [Authorize]
     public class GalleryController : Controller
     {
         // GET: Gallery
