@@ -39,6 +39,11 @@ namespace BusinessLayer.Concrete
             return _headingDal.List();
         }
 
+        public List<Heading> GetListByWriter()
+        {
+            return _headingDal.List(x=>x.WriterID == 3);
+        }
+
         public void UpdateHeading(Heading heading)
         {
             heading.HeadingDate = DateTime.Parse(DateTime.Now.ToShortDateString());
